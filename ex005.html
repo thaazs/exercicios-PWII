@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>Valor de Venda do Computador</title>
+</head>
+<body>
+    <div>
+        <h1>Valor de Venda do Computador</h1>
+        <div class="tabela">
+            <img src="produtividade (2).png">
+
+            
+            <div id="conta"></div>
+        </div>
+        <p class="legenda">Imagem retirada de: <a href="https://www.flaticon.com/br/stickers-gratis/eficiencia-do-trabalho" title="eficiência do trabalho figurinhas">Eficiência do trabalho figurinhas criadas por Stickers - Flaticon</a></p>
+    </div>
+    
+    <script>
+        let valorCompra = 1600
+        let lucroPercentual = 0.2
+        let valorVenda = valorCompra * (1 + lucroPercentual)
+
+
+        const div = document.getElementById('conta')
+
+        div.innerHTML = `<div class="texto">Para lucrar 20% na venda de um computador <br>comprado por R$${valorCompra} ele deve ser revendido por R$${valorVenda.toFixed(2)}</div>`
+    </script>
+</body>
+</html>

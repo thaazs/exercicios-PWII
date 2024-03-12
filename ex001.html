@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>Soma de 4 números</title>
+</head>
+<body>
+    <div>
+        <h1>Soma de 4 números</h1>
+        <div class="tabela">
+            <img src="produtividade.png">
+
+            
+            <div id="conta"></div>
+        </div>
+        <p class="legenda">Imagem retirada de: <a href="https://www.flaticon.com/br/stickers-gratis/eficiencia-do-trabalho" title="eficiência do trabalho figurinhas">Eficiência do trabalho figurinhas criadas por Stickers - Flaticon</a></p>
+    </div>
+    
+    <script>
+        let m1 = 8
+        let m2 = 17
+        let m3 = 26
+        let m4 = 6
+
+        let resultado = m1 + m2 + m3 + m4
+
+        const div = document.getElementById('conta')
+
+        div.innerHTML = `<div class="texto">Somando entre si os números:
+                        ${m1}, ${m2}, ${m3}, ${m4}<br>
+                        obtemos o resultado ${resultado}.</div>`
+    </script>
+</body>
+</html>

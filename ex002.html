@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>Média de um aluno</title>
+</head>
+<body>
+    <div>
+        <h1>Média de um aluno</h1>
+        <div class="tabela">
+            <img src="produtividade (1).png">
+
+            
+            <div id="conta"></div>
+        </div>
+        <p class="legenda">Imagem retirada de: <a href="https://www.flaticon.com/br/stickers-gratis/eficiencia-do-trabalho" title="eficiência do trabalho figurinhas">Eficiência do trabalho figurinhas criadas por Stickers - Flaticon</a></p>
+    </div>
+    
+    <script>
+        let n1 = 9.5
+        let n2 = 10
+        let n3 = 8.5
+
+        let resultado = (n1 + n2 + n3) / 3
+
+        const div = document.getElementById('conta')
+
+        div.innerHTML = `<div class="texto">Um aluno tirou as notas
+                        ${n1}, ${n2} e ${n3} ao longo do bimestre,<br>
+                        ele terá a média de ${resultado.toFixed(2)}.</div>`
+    </script>
+</body>
+</html>

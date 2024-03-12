@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>Mensalidade do Aluno</title>
+</head>
+<body>
+    <div>
+        <h1>Mensalidade do Aluno</h1>
+        <div class="tabela">
+            <img src="produtividade (4).png">
+
+            
+            <div id="conta"></div>
+        </div>
+        <p class="legenda">Imagem retirada de: <a href="https://www.flaticon.com/br/stickers-gratis/eficiencia-do-trabalho" title="eficiência do trabalho figurinhas">Eficiência do trabalho figurinhas criadas por Stickers - Flaticon</a></p>
+    </div>
+    
+    <script>
+        let material = 140.
+        let mensalidade = 400
+        let desconto = 0.05
+
+        let valorTotal = (material+mensalidade) * (1 - desconto)
+
+        const div = document.getElementById('conta')
+
+        div.innerHTML = `<div class="texto">Pagando R$${material} de material e R$${mensalidade} de mensalidade, <br>o valor total da mensalidade com desconto é: R$${valorTotal.toFixed(2)}.</div>`
+    </script>
+</body>
+</html>
